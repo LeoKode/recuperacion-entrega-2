@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Desarrollo de interfaces\\Recu\\Entregas recu\\entrega2\\ListaTareasPendientes\\ListaTareasPendientes\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ListaTareasPendientes.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ListaTareasPendientes.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Desarrollo de interfaces\\Recu\\Entregas recu\\entrega2\\ListaTareasPendientes\\ListaTareasPendientes\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "E:\\Desarrollo de interfaces\\Recu\\Entregas recu\\entrega2\\ListaTareasPendientes\\ListaTareasPendientes\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Desarrollo de interfaces\\Recu\\Entregas recu\\entrega2\\ListaTareasPendientes\\ListaTareasPendientes\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Desarrollo de interfaces\\Recu\\Entregas recu\\entrega2\\ListaTareasPendientes\\ListaTareasPendientes\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ListaTareasPendientes.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ListaTareasPendientes.props",
+      "PackagePath": "build\\ListaTareasPendientes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ListaTareasPendientes.props",
+      "PackagePath": "buildMultiTargeting\\ListaTareasPendientes.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ListaTareasPendientes.props",
+      "PackagePath": "buildTransitive\\ListaTareasPendientes.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

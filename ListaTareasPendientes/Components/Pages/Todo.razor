@@ -1,0 +1,50 @@
+﻿ <!-- Especifica la URL en la que se puede acceder a este componente -->
+@page "/todo"
+<!-- Directiva para que el componente pueda controlar los eventos de UI en modo interactivo del servidor -->
+@rendermode InteractiveServer 
+
+<!-- Muestra el título y el número de tareas pendientes -->
+<h3>Todo (@todos.Count(todo => !todo.IsDone))</h3> 
+
+<ul>
+    <!-- Recorre la lista de tareas y genera un elemento <li> para cada una -->
+    @foreach (var todo in todos)
+    {
+        <li>
+            <!-- Checkbox para marcar la tarea como completada o no  -->
+            <input type="checkbox" @bind="todo.IsDone" />
+            <!-- @bind enlaza la propiedad IsDone de cada tarea con el checkbox, permitiendo que los cambios en el UI se reflejen en el modelo y viceversa -->
+            <!-- Input para editar el título de la tarea -->
+            <input @bind="todo.Title" />
+            <!-- @bind enlaza la propiedad Title de cada tarea con el campo de texto, permitiendo que los cambios en el UI se reflejen en el modelo y viceversa -->
+       </li>
+    }
+</ul>
+
+<!-- Input para añadir una nueva tarea -->
+<input @bind="newTodo" />
+<!-- @bind enlaza el valor del campo de texto con la variable newTodo, permitiendo que los cambios en el UI se reflejen en el modelo y viceversa -->
+
+<!-- Botón para añadir la nueva tarea a la lista -->
+<button @onclick="AddTodo">Add todo</button>
+<!-- @onclick enlaza el evento de clic del botón con el método AddTodo, permitiendo que se ejecute cuando el usuario haga clic en el botón -->
+
+@code {
+    // Lista que contiene las tareas pendientes
+    private List<TodoItem> todos = new();
+    // Cadena para almacenar el título de la nueva tarea
+    string newTodo = "";
+
+    // Método para añadir una nueva tarea a la lista
+    void AddTodo()
+    {
+        // Comprueba que el título de la nueva tarea no esté vacío o contenga solo espacios en blanco
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            // Añade la nueva tarea a la lista
+            todos.Add(new TodoItem { Title = newTodo });
+            // Resetea el valor del título de la nueva tarea
+            newTodo = string.Empty;
+        }
+    }
+}
